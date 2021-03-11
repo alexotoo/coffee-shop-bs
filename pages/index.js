@@ -105,6 +105,20 @@ export default function Home() {
             </ul>
           </div>
         </section>
+        <section className={`${styles.gallery} `}>
+          <div className={styles.gallery_img3}>
+            <img src="/images/coffeefood3.jpg" alt="" />
+          </div>
+          <div className={styles.gallery_img1}>
+            <img src="/images/coffeefood1.jpg" alt="" />
+          </div>
+          <div className={styles.gallery_img2}>
+            <img src="/images/coffeefood2.jpg" alt="" />
+          </div>
+          <div className={styles.gallery_img4}>
+            <img src="/images/coffeefood4.jpg" alt="" />
+          </div>
+        </section>
       </main>
 
       <footer>footer</footer>
