@@ -118,14 +118,16 @@ $color-text: #2d1b09;
 //gallary section
 .gallery {
   display: grid;
-  width: 1000px;
-  overflow: hidden;
-  height: 70vh;
+  width: 100%;
+
+  min-height: 40vh;
   // grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-rows: repeat(2, 200px);
+  grid-template-rows: repeat(4, 350px);
   grid-template-areas:
-    "img1 img1 img3 img4"
-    "img1 img1 img3 img2";
+    "img1 "
+    "img2 "
+    "img3 "
+    "img4 ";
   gap: 10px;
   // row-gap: 10px;
 
@@ -163,6 +165,16 @@ $color-text: #2d1b09;
   }
   .hero__btn {
     margin-top: 3rem;
+  }
+  //gallary section
+  .gallery {
+    // grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(2, 200px);
+    grid-template-areas:
+      "img1 img1 img3 img4"
+      "img1 img1 img3 img2";
+    gap: 10px;
+    // row-gap: 10px;
   }
 }
 @media (min-width: 992px) {
