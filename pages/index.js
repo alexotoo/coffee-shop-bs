@@ -1,65 +1,113 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Navbar from "../components/Navigbar";
+import Slider from "../components/Slider";
+import styles from "../styles/Home.module.scss";
+import {
+  GiCoffeePot,
+  GiCakeSlice,
+  GiCroissant,
+  GiSlicedBread,
+} from "react-icons/gi";
+import { SiCoffeescript, SiBuymeacoffee } from "react-icons/si";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>coffee shop</title>
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+      <nav>
+        {/* navigation */}
+        <Navbar />
+      </nav>
+      <header className={styles.header}>
+        <Slider />
+        <div className={styles.hero__overlay}></div>
+        <div className={styles.hero__text}>
+          <h1 className={styles.hero__text_1}>Friendship cafe</h1>
+          <h3 className={styles.hero__text_2}>your coffee social center</h3>
+          <a href="#" type="button" className={`${styles.hero__btn} btn`}>
+            Learn More
           </a>
         </div>
+      </header>
+
+      <main className={styles.main}>
+        <section id="coffee-offer" className={styles.offers}>
+          <p className={styles.offers_1}>
+            we offer great collections of coffee menu{" "}
+          </p>
+          <h1 className={styles.title}>build your coffee base</h1>
+
+          <div className={styles.offers_base}>
+            <ul className={styles.offers_base_ul}>
+              <li className={styles.offers_base_rt}>
+                <div>
+                  <h4>Hot Coffee</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+                <GiCoffeePot className={styles.offers_base_icon} />
+              </li>
+              <li className={styles.offers_base_rt}>
+                <div>
+                  <h4>Cake slices</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+                <GiCakeSlice className={styles.offers_base_icon} />
+              </li>
+              <li className={styles.offers_base_rt}>
+                <div>
+                  <h4>croasssant</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+                <GiCroissant className={styles.offers_base_icon} />
+              </li>
+            </ul>
+            <img
+              src="/images/coffeetogo.png"
+              alt=""
+              className={styles.offers_base_img}
+            />
+            <ul>
+              <li className={styles.offers_base_lf}>
+                <SiCoffeescript className={styles.offers_base_icon} />
+                <div>
+                  <h4>Coffee in cup</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </li>
+              <li className={styles.offers_base_lf}>
+                <SiBuymeacoffee className={styles.offers_base_icon} />
+                <div>
+                  <h4>Coffee to go</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </li>
+              <li className={styles.offers_base_lf}>
+                <GiSlicedBread className={styles.offers_base_icon} />
+                <div>
+                  <h4>Coffee bread</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+      <footer>footer</footer>
     </div>
-  )
+  );
 }

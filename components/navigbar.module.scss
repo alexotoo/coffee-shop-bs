@@ -1,0 +1,18 @@
+.navigbar {
+  padding: 0.25rem 2rem;
+  background: rgba(0, 0, 0, 0.445);
+  text-align: center;
+  background: #f5f5f3;
+}
+
+@media (min-width: 992px) {
+  .navig {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navigbar {
+    padding: 0.25rem 2rem;
+    height: 15vh;
+  }
+}
