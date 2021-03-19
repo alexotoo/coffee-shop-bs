@@ -11,7 +11,6 @@ const Navigbar = () => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className={styles.navig}>
           <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#link">Link</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

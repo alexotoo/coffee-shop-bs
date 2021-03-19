@@ -19,4 +19,29 @@ ul {
   padding: 0;
 }
 
-/* global utils  */
+footer {
+  padding: 2rem 2rem 0 2rem;
+  margin: 0 2rem 0 2rem;
+  min-height: 30vh;
+  font-size: 14px;
+  background: rgb(99, 45, 0);
+  color: white;
+}
+footer li {
+  list-style: none;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+footer p {
+  line-height: 1px;
+}
+footer h5 {
+  text-transform: uppercase;
+  padding-bottom: 0.25rem;
+}
+.contact {
+  text-align: center;
+}
+.f-icons {
+  font-size: 2rem;
+}

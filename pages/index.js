@@ -2,6 +2,12 @@ import Head from "next/head";
 import Navbar from "../components/Navigbar";
 import Slider from "../components/Slider";
 import styles from "../styles/Home.module.scss";
+import { BsArrowRight } from "react-icons/bs";
+import {
+  FaFacebookSquare,
+  FaPinterestSquare,
+  FaTwitterSquare,
+} from "react-icons/fa";
 import {
   GiCoffeePot,
   GiCakeSlice,
@@ -9,7 +15,6 @@ import {
   GiSlicedBread,
 } from "react-icons/gi";
 import { SiCoffeescript, SiBuymeacoffee } from "react-icons/si";
-import { Col, Container, Row } from "react-bootstrap";
 
 export default function Home() {
   return (
@@ -228,29 +233,122 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className={styles.display}>
-          <div className={styles.display_img1}>
-            {/* <img src="/images/info-coffee6.jpg" alt="" /> */}
+        <section className={`${styles.franchise} pb-2`}>
+          <img src="/images/franch-1.jpeg" alt="" />
+          <img src="/images/franch-3.jpeg" alt="" />
+          <img src="/images/franch-4.jpeg" alt="" />
+          <img src="/images/franch-5.jpeg" alt="" />
+        </section>
+        <section className={styles.display_main}>
+          <div className={styles.display_main1}>
+            <h1 className={`${styles.title} pt-4`}>Information board</h1>
+            <p className={styles.offers_1}>
+              all the information you need here{" "}
+            </p>
           </div>
-          <div className={styles.display_img2}>
-            {/* <img src="/images/info-coffee5.jpg" alt="" /> */}
-          </div>
-          <div className={styles.display_img3}>
-            {/* <img src="/images/info-coffee4.jpg" alt="" /> */}
-          </div>
-          <div className={styles.display_img4}>
-            {/* <img src="/images/info-coffee1.jpg" alt="" /> */}
-          </div>
-          <div className={styles.display_img5}>
-            {/* <img src="/images/info-coffee2.jpg" alt="" /> */}
-          </div>
-          <div className={styles.display_img6}>
-            {/* <img src="/images/info-coffee3.png" alt="" /> */}
+          <div className={styles.display}>
+            <div className={styles.display_img1}>
+              <h4>Monday special</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Explicabo libero sint aut facere voluptatem facilis
+              </p>
+              <a href="#">
+                learn more <BsArrowRight />
+              </a>
+            </div>
+            <div className={styles.display_img2}>
+              <h4>top 5 flovour</h4>
+              <ul>
+                <li>French Vanilla </li>
+                <li>Caramel Macchiato </li>
+                <li>Pumpkin Spice </li>
+                <li>Mocha</li>
+                <li>Africano spice</li>
+              </ul>
+            </div>
+            <div className={styles.display_img3}>
+              <h4>Local brands </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Explicabo libero sint aut facere voluptatem facilis
+              </p>
+              <a href="#">
+                learn more <BsArrowRight />
+              </a>
+            </div>
+            <div className={styles.display_img4}>
+              <h4>friends special</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Explicabo libero sint aut facere voluptatem facilis
+              </p>
+            </div>
+            <div className={styles.display_img5}>
+              <h4>events </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Explicabo libero sint aut facere voluptatem facilis
+              </p>
+            </div>
+            <div className={styles.display_img6}>
+              <h4>weekend vibs</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Explicabo libero sint aut facere voluptatem facilis
+              </p>
+
+              <a href="#">
+                learn more <BsArrowRight />
+              </a>
+            </div>
           </div>
         </section>
       </main>
 
-      <footer>footer</footer>
+      <footer className="footer d-flex flex-wrap justify-content-around">
+        <div>
+          <h5>opening hours</h5>
+          <li>
+            <p className="font-weight-bold">Monday</p>
+            <p>7:30am - 9:30pm</p>
+          </li>
+          <li>
+            <p className="font-weight-bold">Tuesday</p>
+            <p>7:00am - 9:30pm</p>
+          </li>
+          <li>
+            <p className="font-weight-bold">wednesday</p>
+            <p>7:30am - 7:30pm</p>
+          </li>
+          <li>
+            <p className="font-weight-bold">thursday</p>
+            <p>7:30am - 7:30pm</p>
+          </li>
+          <li>
+            <p className="font-weight-bold">friday</p>
+            <p>7:30am - 7:30pm</p>
+          </li>
+          <li>
+            <p className="font-weight-bold">saturday</p>
+            <p>7:30am - 4:00pm</p>
+          </li>
+          <li>
+            <p className="font-weight-bold">sunday</p>
+            <p>7:30am - 71:00pm</p>
+          </li>
+        </div>
+        <div className="contact">
+          <h5>contact us</h5>
+          <p>2269 fake address Road</p>
+          <p>859-437-2538</p>
+          <p>dev@fakeaddress.com </p>
+        </div>
+        <div className="f-icons">
+          <h5>follow us</h5>
+          <FaFacebookSquare /> <FaPinterestSquare /> <FaTwitterSquare />
+        </div>
+      </footer>
     </div>
   );
 }
