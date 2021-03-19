@@ -6,6 +6,7 @@ import styles from "./slider.module.scss";
 const Slider = () => {
   return (
     <Carousel
+      className={styles.carousel}
       indicators={false}
       prevLabel={null}
       nextLabel={null}
@@ -20,7 +21,7 @@ const Slider = () => {
         </span>
       }
     >
-      <Carousel.Item>
+      <Carousel.Item className={styles.carousel_item}>
         <img className=" w-100" src="/images/hero1.jpg" alt="First slide" />
       </Carousel.Item>
       <Carousel.Item>

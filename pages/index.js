@@ -349,6 +349,7 @@ export default function Home() {
           <FaFacebookSquare /> <FaPinterestSquare /> <FaTwitterSquare />
         </div>
       </footer>
+      <div className="text-center">Developed by alexooO</div>
     </div>
   );
 }

@@ -6,6 +6,12 @@
   backface-visibility: visible;
 }
 
+.carousel {
+  min-height: 60vh;
+}
+.carousel img {
+  min-height: 60vh;
+}
 .slider {
   background: transparent;
 }
