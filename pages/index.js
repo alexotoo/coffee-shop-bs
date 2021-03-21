@@ -335,7 +335,7 @@ export default function Home() {
           </li>
           <li>
             <p className="font-weight-bold">sunday</p>
-            <p>7:30am - 71:00pm</p>
+            <p>7:30am - 7:00pm</p>
           </li>
         </div>
         <div className="contact">
