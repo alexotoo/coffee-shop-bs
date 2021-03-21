@@ -341,6 +341,10 @@ $color-text: #2d1b09;
   //menu section
   .menu_content {
     flex-direction: row;
+
+    table {
+      width: 50%;
+    }
   }
 
   .franchise {
