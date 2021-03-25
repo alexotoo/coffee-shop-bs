@@ -31,7 +31,7 @@ const Slider = () => {
         <img className=" w-100" src="/images/hero3.jpg" alt="Third slide" />
       </Carousel.Item>
       <Carousel.Item>
-        <img className="w-100" src="/images/hero3.jpg" alt="Third slide" />
+        <img className="w-100" src="/images/hero4.jpg" alt="Third slide" />
       </Carousel.Item>
     </Carousel>
   );
